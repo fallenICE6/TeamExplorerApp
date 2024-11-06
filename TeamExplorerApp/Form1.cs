@@ -53,5 +53,27 @@ namespace TeamExplorerApp
                 textBoxCheck.Text = "Нет";
             }
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            int intervalInMinutes;
+            if (int.TryParse(intervalTextBox.Text, out intervalInMinutes) && intervalInMinutes > 0)
+            {
+                Calculate(intervalInMinutes);
+            }
+            else
+            {
+                MessageBox.Show("Введите корректный интервал времени.");
+            }
+        }
+
+        private void Calculate(int intervalInMinutes)
+        {
+            double meetingPeriod = 720.0 / 11;
+            int meetingCount = (int)(intervalInMinutes / meetingPeriod);
+            label1.Text = $"{meetingCount}";
+        }
+
     }
+
 }

@@ -39,6 +39,11 @@
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.textBoxCheck = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.intervalTextBox = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -122,7 +127,7 @@
             // textBox9
             // 
             this.textBox9.BackColor = System.Drawing.SystemColors.Info;
-            this.textBox9.Location = new System.Drawing.Point(468, 193);
+            this.textBox9.Location = new System.Drawing.Point(12, 112);
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(270, 20);
             this.textBox9.TabIndex = 9;
@@ -130,16 +135,64 @@
             // 
             // textBoxCheck
             // 
-            this.textBoxCheck.Location = new System.Drawing.Point(468, 219);
+            this.textBoxCheck.Location = new System.Drawing.Point(12, 138);
             this.textBoxCheck.Name = "textBoxCheck";
             this.textBoxCheck.Size = new System.Drawing.Size(270, 20);
             this.textBoxCheck.TabIndex = 10;
+            // 
+            // textBox2
+            // 
+            this.textBox2.BackColor = System.Drawing.SystemColors.Info;
+            this.textBox2.Location = new System.Drawing.Point(561, 171);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(200, 20);
+            this.textBox2.TabIndex = 13;
+            this.textBox2.Text = "Интервал времени (минуты)";
+            // 
+            // intervalTextBox
+            // 
+            this.intervalTextBox.Location = new System.Drawing.Point(561, 197);
+            this.intervalTextBox.Name = "intervalTextBox";
+            this.intervalTextBox.Size = new System.Drawing.Size(200, 20);
+            this.intervalTextBox.TabIndex = 14;
+            // 
+            // textBox4
+            // 
+            this.textBox4.BackColor = System.Drawing.SystemColors.Info;
+            this.textBox4.Location = new System.Drawing.Point(561, 242);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(200, 20);
+            this.textBox4.TabIndex = 15;
+            this.textBox4.Text = "Пересечений:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(641, 245);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 13);
+            this.label1.TabIndex = 16;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(561, 321);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(200, 41);
+            this.button2.TabIndex = 17;
+            this.button2.Text = "Рассчитать";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.intervalTextBox);
+            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBoxCheck);
             this.Controls.Add(this.textBox9);
             this.Controls.Add(this.textBox8);
@@ -172,6 +225,11 @@
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.TextBox textBoxCheck;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox intervalTextBox;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button2;
     }
 }
 
