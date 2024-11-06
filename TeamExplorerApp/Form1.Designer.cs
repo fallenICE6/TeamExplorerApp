@@ -29,32 +29,127 @@
         private void InitializeComponent()
         {
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxX = new System.Windows.Forms.TextBox();
+            this.textBoxR1 = new System.Windows.Forms.TextBox();
+            this.textBoxR2 = new System.Windows.Forms.TextBox();
+            this.textBoxY = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.textBoxCheck = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(264, 206);
+            this.button1.Location = new System.Drawing.Point(12, 337);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(292, 63);
             this.button1.TabIndex = 0;
-            this.button1.Text = "Test";
+            this.button1.Text = "Check point";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox1
+            // textBoxX
             // 
-            this.textBox1.Location = new System.Drawing.Point(264, 36);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(292, 20);
-            this.textBox1.TabIndex = 1;
+            this.textBoxX.Location = new System.Drawing.Point(12, 86);
+            this.textBoxX.Name = "textBoxX";
+            this.textBoxX.Size = new System.Drawing.Size(177, 20);
+            this.textBoxX.TabIndex = 1;
+            // 
+            // textBoxR1
+            // 
+            this.textBoxR1.Location = new System.Drawing.Point(378, 86);
+            this.textBoxR1.Name = "textBoxR1";
+            this.textBoxR1.Size = new System.Drawing.Size(177, 20);
+            this.textBoxR1.TabIndex = 2;
+            // 
+            // textBoxR2
+            // 
+            this.textBoxR2.Location = new System.Drawing.Point(561, 86);
+            this.textBoxR2.Name = "textBoxR2";
+            this.textBoxR2.Size = new System.Drawing.Size(177, 20);
+            this.textBoxR2.TabIndex = 3;
+            // 
+            // textBoxY
+            // 
+            this.textBoxY.Location = new System.Drawing.Point(195, 86);
+            this.textBoxY.Name = "textBoxY";
+            this.textBoxY.Size = new System.Drawing.Size(177, 20);
+            this.textBoxY.TabIndex = 4;
+            // 
+            // textBox5
+            // 
+            this.textBox5.BackColor = System.Drawing.SystemColors.Info;
+            this.textBox5.Location = new System.Drawing.Point(12, 60);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(177, 20);
+            this.textBox5.TabIndex = 5;
+            this.textBox5.Text = "x:";
+            this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBox6
+            // 
+            this.textBox6.BackColor = System.Drawing.SystemColors.Info;
+            this.textBox6.Location = new System.Drawing.Point(195, 60);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(177, 20);
+            this.textBox6.TabIndex = 6;
+            this.textBox6.Text = "y:";
+            this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBox7
+            // 
+            this.textBox7.BackColor = System.Drawing.SystemColors.Info;
+            this.textBox7.Location = new System.Drawing.Point(378, 60);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(177, 20);
+            this.textBox7.TabIndex = 7;
+            this.textBox7.Text = "r1:";
+            this.textBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBox8
+            // 
+            this.textBox8.BackColor = System.Drawing.SystemColors.Info;
+            this.textBox8.Location = new System.Drawing.Point(561, 60);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(177, 20);
+            this.textBox8.TabIndex = 8;
+            this.textBox8.Text = "r2:";
+            this.textBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBox9
+            // 
+            this.textBox9.BackColor = System.Drawing.SystemColors.Info;
+            this.textBox9.Location = new System.Drawing.Point(468, 193);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(270, 20);
+            this.textBox9.TabIndex = 9;
+            this.textBox9.Text = "Находится ли точка в области:";
+            // 
+            // textBoxCheck
+            // 
+            this.textBoxCheck.Location = new System.Drawing.Point(468, 219);
+            this.textBoxCheck.Name = "textBoxCheck";
+            this.textBoxCheck.Size = new System.Drawing.Size(270, 20);
+            this.textBoxCheck.TabIndex = 10;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBoxCheck);
+            this.Controls.Add(this.textBox9);
+            this.Controls.Add(this.textBox8);
+            this.Controls.Add(this.textBox7);
+            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.textBoxY);
+            this.Controls.Add(this.textBoxR2);
+            this.Controls.Add(this.textBoxR1);
+            this.Controls.Add(this.textBoxX);
             this.Controls.Add(this.button1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -67,7 +162,16 @@
         #endregion
 
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBoxX;
+        private System.Windows.Forms.TextBox textBoxR1;
+        private System.Windows.Forms.TextBox textBoxR2;
+        private System.Windows.Forms.TextBox textBoxY;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox textBoxCheck;
     }
 }
 
